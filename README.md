@@ -30,18 +30,18 @@ Tree-Trail
 
     On both Windows and Linux, do the following in the terminal/cmd:
     
-        ```
-        sudo npm install -g bower grunt-cli
-        ```
+    ```
+    sudo npm install -g bower grunt-cli
+    ```
 
 5. Clone the repository
 
    Using the terminal/cmd, do:
    
-       ```
-       cd /path/to/your/XAMPP/htdocs
-       git clone https://github.com/fskreuz/Tree-Trail.git
-       ```
+    ```
+    cd /path/to/your/XAMPP/htdocs
+    git clone https://github.com/fskreuz/Tree-Trail.git
+    ```
 
    It will ask for your Github username and password.
 
