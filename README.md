@@ -19,6 +19,7 @@ Tree-Trail
     - For Windows users, [install msysGit](https://msysgit.github.io/)
     - For Linux users, install via your respective package managers.
         - For Ubuntu, do:
+        
             ```
             sudo apt-get install -y git
             ````
@@ -28,6 +29,7 @@ Tree-Trail
     Grunt is a JS task automation tool and Bower manages libraries and front-end dependencies.
 
     On both Windows and Linux, do the following in the terminal/cmd:
+    
         ```
         sudo npm install -g bower grunt-cli
         ```
@@ -35,6 +37,7 @@ Tree-Trail
 5. Clone the repository
 
    Using the terminal/cmd, do:
+   
        ```
        cd /path/to/your/XAMPP/htdocs
        git clone https://github.com/fskreuz/Tree-Trail.git
@@ -51,6 +54,7 @@ Run XAMPP
 
 - On Windows, start Apache and MySQL using the XAMPP Control Panel
 - On Linux, you can do:
+
     ```
     sudo /path/to/lampp start
     ```
@@ -59,7 +63,6 @@ Once running, visit this url:
 
 ```
 http://localhost/Tree-Trail
-
 ```
 
 ## Contributing code
