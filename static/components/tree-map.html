@@ -1,13 +1,37 @@
 <link rel="import" href="../libs/polymer/polymer.html">
 
 <polymer-element name="tree-map" attributes="latitude longitude">
+  
   <template>
-    <span>This should be a map with latitude {{latitude}} and longitude {{longitude}}</span>
+  
+    <link rel="stylesheet" href="../libs/leaflet/dist/leaflet.css">
+    <style>
+      /* ensure the map element takes up full width and height of container */
+      :host, #map {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    
+    <div id="map"></div>
+  
   </template>
+  
+  <script src="../libs/leaflet/dist/leaflet.js"></script>
   <script>
     Polymer({
       latitude: "0",
-      longitude: "0"
+      longitude: "0",
+      ready : function(){
+      
+        var map = L.map(this.$.map).setView([10.348, 123.748], 9);
+        
+        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+           attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+           maxZoom: 18
+        }).addTo(map);
+      }
     });
   </script>
+
 </polymer-element>
